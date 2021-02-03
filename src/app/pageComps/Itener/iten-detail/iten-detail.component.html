@@ -1,0 +1,366 @@
+<div class="main-body justify-content-start">
+    <div class="py-2 d-flex justify-content-start align-items-center w-100">
+        <a [routerLink]="['/itineraries']" class="d-flex justify-content-start align-items-center px-2 dark-accent-text">
+            <i class="bi bi-arrow-left-circle px-2 py-0 m-0"></i>
+            <p class=" py-0 m-0">Back</p>
+        </a>
+    </div>
+    <div class="top-section d-flex justify-content-between align-items-center px-3 pb-2 w-100">
+        <div>
+            <h4 class="page-title">Details</h4>
+            <h5 class="card-title dark-accent-text text-center pb-0 mb-0">Saturday 1/4/2020</h5>
+        </div>
+        <button class="button-regular-round special-add" type="button" data-bs-toggle="modal"
+            data-bs-target="#AddProject">Add Stop</button>
+    </div>
+    <div class="container h-100">
+        <hr>
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+
+            <div class="col">
+                <div class="card-container shadow py-4 px-4  card-standard">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 class="fw-bold dark-shade-text">Stop #1</h6>
+                        <p class="ms-auto dark-shade-text">$299,000</p>
+                    </div>
+                    <hr>
+                    <img src="https://photos.zillowstatic.com/fp/713f19b02762ad452b1b27d667514087-cc_ft_768.jpg" alt=""
+                        class="w-100 shadow card-standard">
+                    <hr>
+                    <div class="my-2" style="z-index: 20;">
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Client: </h6>
+                                <a class="dark-shade-text">John Smith</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Start Time: </h6>
+                                <p class="">11:00am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Address: </h6>
+                                <a class="dark-shade-text">123 Main Street, Asbury Park New Jersey</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">End Time: </h6>
+                                <p class="">11:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent: </h6>
+                                <a class="dark-shade-text">Betty White</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent Phone: </h6>
+                                <p>732-555-555</p>
+                            </div>
+                            <div class="col-12 py-2 p-2">
+                                <hr>
+                                <h6 class="fw-bold">Instructions: </h6>
+                                <p>Door will be unlocked. Please take off shoes and wear masks. Owner's are willing to let go of the home for way less than list price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            <div class="col">
+                <div class="card-container shadow py-4 px-4 card-standard">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 class="fw-bold dark-shade-text">Stop #2</h6>
+                        <p class="ms-auto dark-shade-text">$3,99,500</p>
+                    </div>
+                    <hr>
+                    <img src="https://photos.zillowstatic.com/fp/7eeb16e19f9c3ec07085951363fb9abf-uncropped_scaled_within_1536_1152.webp" alt=""
+                        class=" w-100 shadow card-standard">
+                    <hr>
+                    <div class="my-2" style="z-index: 20;">
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Client: </h6>
+                                <a class="dark-shade-text">John Smith</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Start Time: </h6>
+                                <p class="">11:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Address: </h6>
+                                <a class="dark-shade-text">321 Summer Ave, Bradley Beach New Jersey</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">End Time: </h6>
+                                <p class="">12:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent: </h6>
+                                <a class="dark-shade-text">Megan Fox</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent Phone: </h6>
+                                <p>732-555-555</p>
+                            </div>
+                            <div class="col-12 py-2 p-2">
+                                <hr>
+                                <h6 class="fw-bold">Instructions: </h6>
+                                <p>Door will be unlocked. Please take off shoes and wear masks. Owner's are willing to let go of the home for way
+                                    less than list price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card-container shadow py-4 px-4 card-standard">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 class="fw-bold dark-shade-text">Stop #3</h6>
+                        <p class="ms-auto dark-shade-text">$3,99,500</p>
+                    </div>
+                    <hr>
+                    <img src="https://photos.zillowstatic.com/fp/7eeb16e19f9c3ec07085951363fb9abf-uncropped_scaled_within_1536_1152.webp"
+                        alt="" class=" w-100 shadow card-standard">
+                    <hr>
+                    <div class="my-2" style="z-index: 20;">
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Client: </h6>
+                                <a class="dark-shade-text">John Smith</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Start Time: </h6>
+                                <p class="">11:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Address: </h6>
+                                <a class="dark-shade-text">321 Summer Ave, Bradley Beach New Jersey</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">End Time: </h6>
+                                <p class="">12:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent: </h6>
+                                <a class="dark-shade-text">Megan Fox</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent Phone: </h6>
+                                <p>732-555-555</p>
+                            </div>
+                            <div class="col-12 py-2 p-2">
+                                <hr>
+                                <h6 class="fw-bold">Instructions: </h6>
+                                <p>Door will be unlocked. Please take off shoes and wear masks. Owner's are willing to let go of the
+                                    home for way less than list price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card-container shadow py-4 px-4 card-standard">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 class="fw-bold dark-shade-text">Stop #4</h6>
+                        <p class="ms-auto dark-shade-text">$299,000</p>
+                    </div>
+                    <hr>
+                    <img src="https://photos.zillowstatic.com/fp/713f19b02762ad452b1b27d667514087-cc_ft_768.jpg" alt=""
+                        class="w-100 shadow card-standard">
+                    <hr>
+                    <div class="my-2" style="z-index: 20;">
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Client: </h6>
+                                <a class="dark-shade-text">John Smith</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Start Time: </h6>
+                                <p class="">11:00am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Address: </h6>
+                                <a class="dark-shade-text">123 Main Street, Asbury Park New Jersey</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">End Time: </h6>
+                                <p class="">11:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent: </h6>
+                                <a class="dark-shade-text">Betty White</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent Phone: </h6>
+                                <p>732-555-555</p>
+                            </div>
+                            <div class="col-12 py-2 p-2">
+                                <hr>
+                                <h6 class="fw-bold">Instructions: </h6>
+                                <p>Door will be unlocked. Please take off shoes and wear masks. Owner's are willing to let go of the home for way
+                                    less than list price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card-container shadow py-4 px-4 card-standard">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 class="fw-bold dark-shade-text">Stop #5</h6>
+                        <p class="ms-auto dark-shade-text">$299,000</p>
+                    </div>
+                    <hr>
+                    <img src="https://photos.zillowstatic.com/fp/713f19b02762ad452b1b27d667514087-cc_ft_768.jpg" alt=""
+                        class="w-100 shadow card-standard">
+                    <hr>
+                    <div class="my-2" style="z-index: 20;">
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Client: </h6>
+                                <a class="dark-shade-text">John Smith</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Start Time: </h6>
+                                <p class="">11:00am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Address: </h6>
+                                <a class="dark-shade-text">123 Main Street, Asbury Park New Jersey</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">End Time: </h6>
+                                <p class="">11:30am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent: </h6>
+                                <a class="dark-shade-text">Betty White</a>
+                            </div>
+                            <div class="col-6 py-2">
+                                <h6 class="fw-bold">Agent Phone: </h6>
+                                <p>732-555-555</p>
+                            </div>
+                            <div class="col-12 py-2 p-2">
+                                <hr>
+                                <h6 class="fw-bold">Instructions: </h6>
+                                <p>Door will be unlocked. Please take off shoes and wear masks. Owner's are willing to let go of the home for way
+                                    less than list price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade ms-lg-5" id="AddProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add a Stop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Client</label>
+                            <select class="form-select form-select" aria-label=".form-select-sm example">
+                                <option selected>Select Client</option>
+                                <option value="1">John Smith</option>
+                                <option value="2">Jane Doe</option>
+                                <option value="3">Billy Bob</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Price</label>
+                            <input type="text" class="form-control w-100" placeholder="$">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address 1</label>
+                            <input type="text" class="form-control w-100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address 2</label>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <input type="text" class="form-control w-100" value="NJ">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Day Requested</label>
+                            <input type="date" class="form-control w-100" name="trip-start" min="2021-01-01"
+                                max="2021-12-31">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Start Time</label>
+                            <input type="time" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">End Time</label>
+                            <input type="time" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select form-select" aria-label=".form-select-sm example">
+                                <option selected>Select Status</option>
+                                <option value="1">Not Requested</option>
+                                <option value="1">Requested</option>
+                                <option value="3">Confirmed</option>
+                                <option value="2">Denied</option>
+                                <option value="2">Rescheduled</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Agent Name</label>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Agent Phone</label>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Instructions</label>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Link</label>
+                            <input type="url" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Notes</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="pointer" data-bs-dismiss="modal">Close</p>
+                    <button type="button" class="button-regular-round" data-bs-dismiss="modal">Add Itinerary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

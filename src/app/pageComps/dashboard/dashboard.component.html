@@ -1,0 +1,77 @@
+<div class="main-body">
+    <div class="container dash-holder">
+        <div class="page-intro ps-2 pb-0 mb-0 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="page-title">Dashboard</h3>
+                    <p class="dark-accent-text">{{ date }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0 w-100 d-flex justify-content-center">
+            <div class="col-12 my-2 px-0">
+                <div class="wide-card-regular flex-column shadow-lg">
+                    <div class="my-card-container">
+                        <div class="my-card-icon">
+                            <i class="bi bi-newspaper"></i>
+                        </div>
+                        <div class="main-card-body">
+                            <h4 class="my-card-number">12</h4>
+                            <p class="my-card-title">Projects</p>
+                            <a [routerLink]="['/projects']"><button class="button-regular-round">View All</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-2 px-0">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="wide-card-regular flex-column shadow-lg p-3">
+                                <div class="main-card-body">
+                                    <h4 class="my-card-number">5</h4>
+                                    <p class="my-card-title">Properties</p>
+                                    <button class="button-regular-round my-1">View All</button>
+                                </div>    
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="wide-card-inverted flex-column shadow-lg p-3">
+                                <div class="main-card-body">
+                                    <h4 class="my-card-number">5</h4>
+                                    <p class="my-card-title">Itineraries</p>
+                                    <a [routerLink]="['/itineraries']"><button class="button-inverted-round">View All</button></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg my-2 me-lg-2 px-0">
+                <div class="wide-card-inverted flex-column shadow-lg">
+                    <div class="my-card-container">
+                        <div class="main-card-body">
+                            <h4 class="my-card-number">48</h4>
+                            <p class="my-card-title">Total People</p>
+                            <a [routerLink]="['/people']"><button class="button-inverted-round">View All</button></a>
+                        </div>
+                        <div class="my-card-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg my-2 ms-lg-2 px-0">
+                <div class="wide-card-regular flex-column shadow-lg">
+                    <div class="my-card-container">
+                        <div class="my-card-icon">
+                            <i class="bi bi-folder"></i>
+                        </div>
+                        <div class="main-card-body">
+                            <h4 class="my-card-number">12</h4>
+                            <p class="my-card-title">Active Folders</p>
+                            <a [routerLink]="['/active-folders']"><button class="button-regular-round">View All</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,99 @@
+
+<div class="main-body justify-content-start py-3">
+    <div class="container p-2 w-100">
+        <div class="top-section d-flex justify-content-between align-items-end px-3 pb-2">
+            <h4 class="page-title">All Projects</h4>
+            <button class="button-regular-round special-add" type="button" data-bs-toggle="modal" data-bs-target="#AddProject">New Project</button>
+        </div>
+        <div class="main-area-grid h-100 pt-1">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-0 w-100">
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <img src="https://images.unsplash.com/photo-1599999905143-11b518ce5e39?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text">Example Title</h5>
+                            <p class=""><span class="dark-shade-text fw-bold">4</span> Todo's Items</p>
+                            <p class="text-small"><span class="dark-shade-text">10</span> Done Items</p>
+                            <div class="d-flex w-100 justify-content-between align-items-center py-2">
+                                <p class="text-small dark-accent-text">Added Jan 16th 2020</p>
+                                <a class="dark-shade-text nav-link p-0 m-0">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <img src="https://images.unsplash.com/photo-1593437955835-fc8c51725430?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text">Example Title</h5>
+                            <p class=""><span class="dark-shade-text fw-bold">4</span> Todo's Items</p>
+                            <p class="text-small"><span class="dark-shade-text">10</span> Done Items</p>
+                            <div class="d-flex w-100 justify-content-between align-items-center py-2">
+                                <p class="text-small dark-accent-text">Added Jan 16th 2020</p>
+                                <a class="dark-shade-text nav-link p-0 m-0">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <img src="https://images.unsplash.com/photo-1579540830482-659e7518c895?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text">Example Title</h5>
+                            <p class=""><span class="dark-shade-text fw-bold">4</span> Todo's Items</p>
+                            <p class="text-small"><span class="dark-shade-text">10</span> Done Items</p>
+                            <div class="d-flex w-100 justify-content-between align-items-center py-2">
+                                <p class="text-small dark-accent-text">Added Jan 16th 2020</p>
+                                <a class="dark-shade-text nav-link p-0 m-0">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <img src="https://images.unsplash.com/photo-1599469803986-a6811c726ca7?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDM4fGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text">Example Title</h5>
+                            <p class=""><span class="dark-shade-text fw-bold">4</span> Todo's Items</p>
+                            <p class="text-small"><span class="dark-shade-text">10</span> Done Items</p>
+                            <div class="d-flex w-100 justify-content-between align-items-center py-2">
+                                <p class="text-small dark-accent-text">Added Jan 16th 2020</p>
+                                <a class="dark-shade-text nav-link p-0 m-0">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade ms-lg-5" id="AddProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add a Project</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"> 
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Project Title</label>
+                                <input type="email" class="form-control">
+                                <div class="form-text">A brief descriptive title for your project.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Project Description</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                                <div class="form-text">Decribe your project with less than 200 words.</div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="pointer" data-bs-dismiss="modal">Close</p>
+                        <button type="button" class="button-regular-round" data-bs-dismiss="modal">Add Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crmProject';
+  appHeight;
+  noScroll = false;
+  menuCloseIfOpen = false;
+
+
+  ngOnInit(): void {
+    this.appHeight = window.innerHeight;
+  }
+
+  menucloseCheck(){
+    if (this.noScroll === false){
+      return this.menuCloseIfOpen 
+    }else{
+      return this.menuCloseIfOpen = false
+    }
+  }
+
 }
+

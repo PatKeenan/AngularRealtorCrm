@@ -1,0 +1,40 @@
+<i *ngIf="!naviClick" class="navi-icon-open bi bi-bar-chart-fill fs-5 dark-accent-text" (click)='mobileNavToggle()'></i>
+<i *ngIf="naviClick" class="navi-icon-open bi bi-x-circle fs-5 dark-accent-text" (click)='mobileNavToggle()'></i>
+
+<div class="navi px-4 light-shade-bg shadow-lg" [ngClass]="{'nav-open': naviClick}">
+    <div class="navi-logo-brand w-100 p-lg-3 pb-4 pt-3">
+        <a class="d-flex flex-column justify-content-center align-items-center" [routerLink]="['/dashboard']" (click)="checkClick()">
+        <img src="assets/ImagesAssets/appleTouchIcon.png" alt="" height="30%" width="30%">
+        </a>
+        <!-- <p class="fs-5 fw-bold dark-accent-text">Realtor CRM</p> -->
+        <!-- <hr class="dropdown-divider w-100" style="opacity: .3 !important;"> -->
+    </div>
+    <ul class="nav d-flex flex-column justify-content-center align-items-center h-100 px-2" (click)='mobileNavToggle()'>
+        <li class="nav-item py-3">
+            <a [routerLink]="['dashboard']">Dashboard</a>
+        </li>
+        <li class="nav-item py-3">
+            <a [routerLink]="['projects']" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item py-3">
+            <a [routerLink]="['/itineraries']" class="nav-link">Itineraries</a>
+        </li>
+        <li class="nav-item py-3">
+            <a [routerLink]="['people']" class="nav-link">People</a>
+        </li>
+        <li class="nav-item py-3 w-100">
+            <a [routerLink]="['active-folders']" class="nav-link p-0">Active Folders</a>
+        </li>
+        <hr class="dropdown-divider w-100">
+        <li class="nav-item">
+            <a [routerLink]="['/settings']" class="nav-link super-small pb-1">Settings</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['sign-out']" class="nav-link logout-text super-small pt-1">Logout</a>
+        </li>
+       
+    </ul>
+    <div class="w-100 d-flex shadow justify-content-center light-shade-bg py-1" style="position: absolute; left: 0; bottom: 0; right: 0;">
+        <p class="dark-accent-text" style="font-size: 12px;">Copyright © 2021 Pat Keenan</p>
+    </div>
+</div>

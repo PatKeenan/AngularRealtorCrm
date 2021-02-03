@@ -1,0 +1,104 @@
+<div class="main-body justify-content-start py-3">
+    <div class="container p-2 w-100">
+        <div class="top-section d-flex justify-content-between align-items-end px-3 pb-2">
+            <h4 class="page-title pb-0 mb-0">Itineraries</h4>
+            <button class="button-regular-round special-add" type="button" data-bs-toggle="modal"
+                data-bs-target="#AddProject">New Itinerary</button>
+        </div>
+        <div class="main-area-grid h-100 pt-1">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-0 w-100">
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text text-center">Saturday 1/4/2021</h5>
+                            <hr>
+                           <!--  <p class="dark-shade-text"><span class="text-small dark-accent-text">Client: </span>John Smith</p> -->
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Properties: </span>5</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Start Time: </span> 10:00am</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">End Time: </span> 2:00pm</p>
+                            <hr>
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <a class="dark-accent-text" [routerLink]="['details']">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text text-center">Sunday 1/5/2021</h5>
+                            <hr>
+                          <!--   <p class="dark-shade-text"><span class="text-small dark-accent-text">Client: </span>Jane Doe</p> -->
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Properties: </span>5</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Start Time: </span> 10:00am</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">End Time: </span> 2:00pm</p>
+                            <hr>
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <a class="dark-accent-text" [routerLink]="['details']">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text text-center">Monday 1/6/2021</h5>
+                            <hr>
+                           <!--  <p class="dark-shade-text"><span class="text-small dark-accent-text">Client: </span>Billy Bob</p> -->
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Properties: </span>5</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Start Time: </span> 10:00am</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">End Time: </span> 2:00pm</p>
+                            <hr>
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <a class="dark-accent-text" [routerLink]="['details']">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-standard shadow">
+                        <div class="card-body">
+                            <h5 class="card-title dark-accent-text text-center">Tuesday 1/7/2021</h5>
+                            <hr>
+                          <!--   <p class="dark-shade-text"><span class="text-small dark-accent-text">Client: </span>John Smith</p> -->
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Properties: </span>3</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">Start Time: </span> 9:00am</p>
+                            <p class="dark-shade-text"><span class="text-small dark-accent-text">End Time: </span> 12:00pm</p>
+                            <hr>
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <a class="dark-accent-text" [routerLink]="['details']">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade ms-lg-5" id="AddProject" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add an Itinerary</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Day</label>
+                                <input type="date" class="form-control w-100" name="trip-start" min="2021-01-01" max="2021-12-31">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Start Time</label>
+                                <input type="time" class="form-control w-100">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="pointer" data-bs-dismiss="modal">Close</p>
+                        <button type="button" class="button-regular-round" data-bs-dismiss="modal">Add Itinerary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

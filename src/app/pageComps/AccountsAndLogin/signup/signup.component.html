@@ -1,0 +1,17 @@
+<div class="main-body">
+    <div class="container container-logins">
+        <h4 class="page-title mb-2 ms-1">Sign Up</h4>
+        <form action="dashboard" class="form p-5 shadow-lg card-standard">
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="John Smith" required>
+            <label for="" class="form-label pt-2">Email</label>
+            <input type="email" class="form-control" placeholder="example@gmail.com" required>
+            <label for="" class="form-label pt-2">Password</label>
+            <input type="password" class="form-control"required>
+            <div class="d-flex justify-content-between align-items-baseline p-0 m-0">
+                <button class="button-regular-round mt-3">Register</button>
+                <a [routerLink]="['/sign-in']" class="nav-link text-small dark-accent-text p-0 m-0">Or Login</a>
+            </div>
+        </form>
+    </div>
+</div>

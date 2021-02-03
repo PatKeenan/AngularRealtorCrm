@@ -1,0 +1,81 @@
+@import '/src/styles.scss';
+
+@mixin baseTransition {
+    transition: ease-in-out .2s;
+}
+.navi-logo-brand{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-top: 1.2px solid rgba(0, 0, 0, 0.048);
+    @media (min-width: 1100px) {
+        border-bottom: 1.2px solid rgba(0, 0, 0, 0.048);
+        border-top: 0;
+    }
+}
+
+.bi-bar-chart-fill{
+    transform: rotate(-90deg);
+}
+.navi-icon-open{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99;
+    @include baseTransition;
+}
+.navi-icon-close{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99;
+    @include baseTransition;
+}
+.nav-open{
+    transform: translateX(0px) !important;
+    @include baseTransition;
+}
+
+.navi{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    z-index: 98;
+    transform: translateX(200px);
+    @include baseTransition;
+}
+.navi > ul > li > a {
+    text-decoration: none;
+    padding: 10px 5px;
+    color:$dark-accent;
+    @include baseTransition;
+    &:hover, &:active, &:focus{
+        color: $main-brand;
+    }
+}
+.logout-text{
+    color: $dark-shade !important;
+}
+.super-small{
+    font-size: 14px !important;
+}
+
+@media (min-width: 1100px){
+    .navi{
+        position: fixed;
+        transform: unset !important;
+        left: 0;
+        right: unset !important;
+    }
+    .navi-icon-open, .navi-icon-close{
+        display: none;
+    }
+    .navi-logo-brand{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: unset;
+    }
+}

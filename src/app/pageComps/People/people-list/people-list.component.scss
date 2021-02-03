@@ -1,0 +1,13 @@
+.prof-pic{
+    img{
+        height: 100px;
+        width: 90px;
+        border-radius: 10%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.card-body > *{
+    margin: 0;
+    padding: 0;
+}

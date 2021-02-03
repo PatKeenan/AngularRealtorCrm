@@ -1,1 +1,190 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+
+$white: #FFFFFF;
+$light-shade: #FAFBF9;
+$light-accent: #F1D259;
+$main-brand: #A1BDF3;
+$dark-accent: #8EA5B7;
+$dark-shade: #6C78D7;
+
+/* resets */
+html{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+p,h1,h2,h3,h4,h5,h6,a{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $light-shade;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    a:hover{
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none !important;
+    }
+}
+.pointer:hover{
+    cursor: pointer;
+}
+@media(max-width: 500px){
+    .container-logs{
+        margin-bottom: 40px;
+    }
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    height: 100% !important;
+    @media(min-width: 600px){
+        justify-content: center;
+        padding: 20px;
+        min-height: 95vh;
+    }
+    @media(min-width: 1100px){
+        padding-left: 5%;
+        min-height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: calc(100vw - 128px);
+    }
+}
+.container-logins{
+    width: 100%;
+    @media(min-width: 600px){
+        width: 80%;
+    }
+    @media(min-width: 900px){
+        width: 70%;
+    }
+    @media(min-width: 1100px){
+        width: 50%;
+    }
+}
+
+/* Colors */
+
+.dark-accent-text{
+    color: $dark-accent;
+}
+.dark-accent-bg{
+    background-color: $dark-accent;
+}
+.main-brand-bg-color{
+    background-color:$main-brand;
+}
+.dark-shade-bg{
+    background-color:$dark-shade;
+}
+.dark-shade-text{
+    color:$dark-shade;
+}
+.light-shade-bg{
+    background-color: $light-shade;
+}
+.light-shade-text{
+    color: $light-shade
+}
+.light-accent-text{
+    color: $light-accent;
+}
+
+
+/* variables & Mixins */
+
+@mixin centeredMixin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* typogography */
+.page-title{
+    color:$dark-shade;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+/* Utilities */
+
+/* -------- Buttons --------  */
+@mixin buttonbase($bgcolor, $txtcolor) {
+    background-color: $bgcolor;
+    color:$txtcolor;
+    padding: .3em .8em;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: ease-in-out .1s;
+    &:focus{
+        outline: none;
+        background-color: $bgcolor;
+        color:$txtcolor;
+    }
+    &:hover{
+        background-color: $txtcolor;
+        color: $bgcolor;
+        border: 1px solid $bgcolor;
+        transition: ease-in-out .1s;
+    }
+    &:active {
+        background-color: $bgcolor;
+        color:$txtcolor;
+        outline:none;
+        transform: scale(.95);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
+        transition: ease-in-out .1s;
+    }
+
+}
+.button-regular{
+    @include buttonbase($dark-shade,$light-shade);
+}
+.button-inverted{
+     @include buttonbase($light-shade, $dark-shade);
+      border: 1px solid $light-shade !important;
+}
+.button-regular-round{
+    @extend .button-regular;
+    border-radius: 20px;
+}
+.button-inverted-round{
+     @extend .button-inverted;
+      border-radius: 20px;
+}
+/* -------- End Buttons --------  */
+
+/* -------- Card --------  */
+.card-standard{
+    border-radius: 15px;
+}
+.text-small{
+    font-size: .8rem;
+}
+
+/* Animations */
